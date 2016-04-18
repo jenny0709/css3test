@@ -29,12 +29,16 @@ css3笔记
 	- :after 在每个p元素的内容之后插入(行内标签)
 
 > :before、:after 功能
->1.清除浮动
+> 1. 清除浮动
 ```css
+/*清除浮动*/
 .clf:after,.clf:before{
 	content="";
 	display:block;
 	clear:both;
 }
+```
+> 2. 做一些常用效果“”,背景图片
+
 
 
