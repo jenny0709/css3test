@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>css3选择器</title>
 	<style>
+	/*1.后代选择器*/
 		/*.list p{
 			background-color:green;
 		}*/
@@ -16,9 +17,24 @@
 		/*.list li:nth-last-child(3){
 			background-color: green;
 		}*/
-		p:first-child{
+		/*p:first-child{
 			background-color: red;
-		}
+		}*/
+		/*p:last-child{
+			background-color: red;
+		}*/
+		/*p:empty{
+			height:30px;
+			background-color: red;
+		}*/
+	/*2.同辈选择器*/
+		/*.one+p{
+			background-color: red;
+		}*/
+		/*.one~p{
+			background-color: red;
+		}*/
+		
 	</style>
 </head>
 <body>
@@ -27,21 +43,23 @@
 		<li>002</li>
 		<li>003</li>
 		<li>004</li>
-		<li>005</li>
+		<li class="one">005</li>
+		<p>p1标签</p>
+		<p>p2标签</p>
 		<li>006</li>
 		<li>007</li>
+		<li class="one">005</li>
+		<p>p1标签</p>
 		<li>008</li>
 		<li>009</li>
 		<li>010</li>
 	</ul>
 	<ul class="list">
-		<p>p1标签</p>
-		<p>p2标签</p>
 		<p>p3标签</p>
 		<p>p4标签</p>
 		<li>
-			<p>001</p>
-			<p>002</p>
+			<p>li里面的p1标签</p>
+			<p>li里面的p2标签</p>
 		</li>
 	</ul>
 </body>
