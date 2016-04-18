@@ -37,4 +37,8 @@ css3笔记
 	clear:both;
 }
 
+	4.属性选择器
+	- [attr]
+	- [attr=value]
+
 
