@@ -19,10 +19,22 @@ css3笔记
 	选中父元素中倒数第2个子元素p,同上;
 	- p:first-child
 	选中父元素中第一个子元素为p的元素;
+
 	2.同辈选择器
+
 	3.伪类选择器
 	- :focus 匹配获得焦点的input元素
-	- :first-letter 匹配
+	- :first-letter 匹配p标签的第一个文字
+	- :before 在每个p元素的内容之前插入内容(行内标签)
+	- :after 在每个p元素的内容之后插入(行内标签)
 
+> :before、:after 功能
+>1.清除浮动
+```css
+.clf:after,.clf:before{
+	content="";
+	display:block;
+	clear:both;
+}
 
 
